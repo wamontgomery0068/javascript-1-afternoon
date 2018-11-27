@@ -6,8 +6,17 @@
 //plus the value of the name parameter.
 
 function greeting (name){
-  return "Hello, "+ name;
-}
+  return "Hello, " + name;
+};
+greeting(name);
+
+// or
+
+// function greeting (name){
+//   return "Hello, " + "Andrew";
+// };
+// greeting(name);
+
 
 //////////////////PROBLEM 2////////////////////
 
@@ -15,15 +24,36 @@ function greeting (name){
 //Name it newGreeting.
 
 var newGreeting = function (name){
-  return "Hello, "+ name;
-}
+  return "Hello, " + name; 
+};
+newGreeting(name);
+
+// or
+
+// var newGreeting = function (name){
+//   return "Hello, " + "Batman!";
+// };
+// newGreeting(name);
+
 
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-var finalGreeting =(name)=>{return "Hello, "+ name;}
+var finalGreeting = (name) => {
+  return "Hello, " + name;
+};
+
+finalGreeting(name);
+
+// or
+
+// var finalGreeting = (name) => {
+//   return "Hello, " + "Green Arrow!";
+// };
+
+// finalGreeting(name);
 
 //////////////////PROBLEM 4////////////////////
 
