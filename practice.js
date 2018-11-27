@@ -62,22 +62,22 @@ finalGreeting(name);
 
 var groceries = ["apples","milk","eggs","bread"];
 
+console.log(groceries);
+
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
 
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
-function doubleCheck(array){
-  if(array!==('chocolate')){
-    array.push('chocolate');
-  }
-  return array
-}
+function doubleCheck (array){
+  if(array !== ("chocolate")){
+    array.push("chocolate");
+  };
+  return array;
+};
 
-doubleCheck(groceries)
-  
-
+doubleCheck(groceries);
 
 //////////////////PROBLEM 5////////////////////
 
@@ -86,11 +86,11 @@ doubleCheck(groceries)
 //name (a string), color: (a string), age (a number),
 //and goodBoy (a boolean).
 
-var dog ={
+var dog = {
   name: "Franklin",
   color: "Black",
-  age: 2,
-  goodBoy: true
+  age: 3,
+  goodBoy: true,
 };
 
 //...access the dog's name from the object and assign it to a
@@ -98,16 +98,20 @@ var dog ={
 
 var devMountainClassPet = dog.name;
 
+console.log(devMountainClassPet);
+
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
-dog.bark = function(){
+dog.bark = function () {
   return "Woof woof";
 };
 
+dog.bark();
+
 //Store the result of invoking the bark method in a variable called ruff.
 
-var ruff = dog.bark()
+var ruff = dog.bark();
 
 //////////////////PROBLEM 6////////////////////
 
@@ -157,15 +161,17 @@ var mathSum = math(3,4,add)
 
 function sampleCallbackOne() {
   return "I am a callback function";
-}
+};
 
 function sampleCallbackTwo() {
   return "I am also a callback function";
-}
+};
 
-function invoker(callback){
-  return callback();
-}
+function invoker(cb){
+  return cb();
+};
+
+invoker(Hello);
 
 //////////////////PROBLEM 9////////////////////
 
@@ -189,7 +195,7 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck"];
+var globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
 let bathroomScope = ["duck","rubberDuck",];
@@ -205,9 +211,9 @@ let pondScope = ["duck","realDuck"];
 //Create a function called outerFn which returns an anonymous
 //function which returns your name.
 
-function outerFn (){
-  return function(){
-    return 'Andrew';
+function outerFn () {
+  return function () {
+    return "Andrew";
   }
 }
 
@@ -217,4 +223,4 @@ var innerFn = outerFn();
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
-var finalResult = innerFn ();
+var finalResult = innerFn();
